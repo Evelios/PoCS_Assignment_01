@@ -22,6 +22,6 @@ ggplot(boating_records,
   geom_point() +
   geom_smooth(method='lm')
 
-snatch_reg = lm(record ~ weight_class*event,data=snatch_records)
-clean_jerk_reg = lm(record ~ weight_class*event,data=clean_jerk_records)
-total_reg = lm(record ~ weight_class*event,data=records)
+snatch_reg = lm(record ~ weight_class,data=snatch_records)
+clean_jerk_reg = lm(record ~ weight_class,data=clean_jerk_records)
+total_reg = lm(record ~ weight_class,data=total_records)
